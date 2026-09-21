@@ -1,0 +1,5 @@
+Model,Role,Training_epochs,Selection,Neighbor_spatial_information
+Random Forest,Conventional ML baseline,,Validation-selected hyperparameters,No
+RNN,Temporal baseline,100.0,Best epoch 95 by validation ADE+0.25FDE,No
+LSTM,Temporal baseline,100.0,Best epoch 70 by validation ADE+0.25FDE,No
+HINN,Proposed HINN,100.0,"Hyper-Information fusion best epoch 31; fusion alpha=0.56, validation locked",Yes: HINN spatiotemporal encoder + target/neighbor Hyper-Information

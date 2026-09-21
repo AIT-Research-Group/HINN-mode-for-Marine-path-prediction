@@ -1,0 +1,277 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>HINN 20-case selection</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4;color:#111}
+header{background:white;padding:18px;position:sticky;top:0;border-bottom:1px solid #ddd;z-index:5}
+main{max-width:1500px;margin:auto;padding:16px}
+.case{background:white;padding:14px;margin:0 0 20px;border:1px solid #ddd}
+.case img{width:100%;height:auto;display:block;margin:10px 0}
+h2{margin:0 0 5px;font-size:20px}
+.badge{font-weight:bold;color:#333;margin-bottom:7px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid #ddd;padding:7px;text-align:left}
+th{background:#f7f7f7}
+</style></head><body>
+<header><h1>20 AIS cases for HINN figure selection</h1>
+<p>Cases 1–12 are HINN-leading. Cases 13–20 are near-tie/challenging controls. Selection is explicitly labeled to avoid misleading cherry-picking.</p></header>
+<main>
+    <section class="case">
+      <h2>Case 01 — Straight — MMSI 525100764</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case01_Straight_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1172.0 m</td><th>Average speed</th><td>7.59 kn</td></tr>
+        <tr><th>True turn</th><td>-0.37°</td><th>Anchor</th><td>10.21067, 107.05060</td></tr>
+        <tr><th>RF ADE/FDE</th><td>177.8/417.9 m</td><th>RNN ADE/FDE</th><td>231.8/498.5 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>167.4/386.7 m</td><th>HINN ADE/FDE</th><td><b>105.2/190.6 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+37.1% ADE</td><th></th><td>+50.7% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 02 — Straight — MMSI 574480000</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case02_Straight_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1858.7 m</td><th>Average speed</th><td>12.04 kn</td></tr>
+        <tr><th>True turn</th><td>-0.12°</td><th>Anchor</th><td>10.30229, 107.26681</td></tr>
+        <tr><th>RF ADE/FDE</th><td>90.6/245.2 m</td><th>RNN ADE/FDE</th><td>132.5/328.8 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>88.9/178.4 m</td><th>HINN ADE/FDE</th><td><b>27.4/65.4 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+69.2% ADE</td><th></th><td>+63.3% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 03 — Moderate curve — MMSI 525100764</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case03_Moderate_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1221.7 m</td><th>Average speed</th><td>7.92 kn</td></tr>
+        <tr><th>True turn</th><td>+12.39°</td><th>Anchor</th><td>10.22014, 107.05614</td></tr>
+        <tr><th>RF ADE/FDE</th><td>107.4/244.6 m</td><th>RNN ADE/FDE</th><td>286.9/636.0 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>167.2/381.1 m</td><th>HINN ADE/FDE</th><td><b>21.0/41.3 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+80.4% ADE</td><th></th><td>+83.1% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 04 — Moderate curve — MMSI 352001126</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case04_Moderate_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1563.0 m</td><th>Average speed</th><td>10.13 kn</td></tr>
+        <tr><th>True turn</th><td>-20.40°</td><th>Anchor</th><td>10.41715, 107.00937</td></tr>
+        <tr><th>RF ADE/FDE</th><td>124.9/340.2 m</td><th>RNN ADE/FDE</th><td>126.1/353.4 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>125.4/345.6 m</td><th>HINN ADE/FDE</th><td><b>49.8/130.3 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+60.1% ADE</td><th></th><td>+61.7% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 05 — Strong curve — MMSI 229786000</h2>
+      <div class="badge">HINN-leading</div>
+      <img src="figures/Case05_Strong_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1921.4 m</td><th>Average speed</th><td>12.45 kn</td></tr>
+        <tr><th>True turn</th><td>-46.09°</td><th>Anchor</th><td>10.53756, 106.85495</td></tr>
+        <tr><th>RF ADE/FDE</th><td>666.6/1656.2 m</td><th>RNN ADE/FDE</th><td>582.8/1463.3 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>694.9/1768.9 m</td><th>HINN ADE/FDE</th><td><b>333.8/860.1 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+42.7% ADE</td><th></th><td>+41.2% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 06 — Strong curve — MMSI 525100764</h2>
+      <div class="badge">HINN-leading</div>
+      <img src="figures/Case06_Strong_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1182.2 m</td><th>Average speed</th><td>7.66 kn</td></tr>
+        <tr><th>True turn</th><td>-38.98°</td><th>Anchor</th><td>10.19989, 107.04771</td></tr>
+        <tr><th>RF ADE/FDE</th><td>350.4/850.7 m</td><th>RNN ADE/FDE</th><td>369.5/815.0 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>307.1/696.8 m</td><th>HINN ADE/FDE</th><td><b>227.2/491.8 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+26.0% ADE</td><th></th><td>+29.4% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 07 — Long-range — MMSI 229786000</h2>
+      <div class="badge">HINN-leading</div>
+      <img src="figures/Case07_Long-range_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1879.7 m</td><th>Average speed</th><td>12.18 kn</td></tr>
+        <tr><th>True turn</th><td>+71.55°</td><th>Anchor</th><td>10.54468, 106.84940</td></tr>
+        <tr><th>RF ADE/FDE</th><td>421.1/1260.1 m</td><th>RNN ADE/FDE</th><td>404.5/1159.7 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>419.9/1162.0 m</td><th>HINN ADE/FDE</th><td><b>209.9/549.1 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+48.1% ADE</td><th></th><td>+52.7% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 08 — Long-range — MMSI 574480000</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case08_Long-range_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1856.9 m</td><th>Average speed</th><td>12.03 kn</td></tr>
+        <tr><th>True turn</th><td>-0.48°</td><th>Anchor</th><td>10.30154, 107.26348</td></tr>
+        <tr><th>RF ADE/FDE</th><td>93.0/240.0 m</td><th>RNN ADE/FDE</th><td>74.9/210.3 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>104.8/345.4 m</td><th>HINN ADE/FDE</th><td><b>28.9/75.6 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+61.5% ADE</td><th></th><td>+64.1% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 09 — Offshore — MMSI 636018224</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case09_Offshore_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1590.1 m</td><th>Average speed</th><td>10.30 kn</td></tr>
+        <tr><th>True turn</th><td>+13.17°</td><th>Anchor</th><td>10.25801, 107.10015</td></tr>
+        <tr><th>RF ADE/FDE</th><td>181.8/450.4 m</td><th>RNN ADE/FDE</th><td>111.1/277.2 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>127.8/349.5 m</td><th>HINN ADE/FDE</th><td><b>73.5/188.1 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+33.9% ADE</td><th></th><td>+32.1% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 10 — Offshore — MMSI 574480000</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case10_Offshore_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1758.0 m</td><th>Average speed</th><td>11.39 kn</td></tr>
+        <tr><th>True turn</th><td>-3.17°</td><th>Anchor</th><td>10.27914, 107.11877</td></tr>
+        <tr><th>RF ADE/FDE</th><td>53.2/142.7 m</td><th>RNN ADE/FDE</th><td>51.5/165.4 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>72.1/199.7 m</td><th>HINN ADE/FDE</th><td><b>24.2/94.8 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+53.0% ADE</td><th></th><td>+33.6% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 11 — Channel/approach — MMSI 229786000</h2>
+      <div class="badge">HINN-leading</div>
+      <img src="figures/Case11_Channel_approach_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1863.8 m</td><th>Average speed</th><td>12.08 kn</td></tr>
+        <tr><th>True turn</th><td>+69.45°</td><th>Anchor</th><td>10.54363, 106.84923</td></tr>
+        <tr><th>RF ADE/FDE</th><td>364.3/1118.5 m</td><th>RNN ADE/FDE</th><td>374.5/1149.1 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>367.6/1124.8 m</td><th>HINN ADE/FDE</th><td><b>173.5/468.2 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+52.4% ADE</td><th></th><td>+58.1% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 12 — Channel/approach — MMSI 352001126</h2>
+      <div class="badge">✅ Recommended for main figure</div>
+      <img src="figures/Case12_Channel_approach_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1633.6 m</td><th>Average speed</th><td>10.58 kn</td></tr>
+        <tr><th>True turn</th><td>+31.74°</td><th>Anchor</th><td>10.47192, 106.94105</td></tr>
+        <tr><th>RF ADE/FDE</th><td>184.1/451.9 m</td><th>RNN ADE/FDE</th><td>99.3/269.4 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>100.3/235.3 m</td><th>HINN ADE/FDE</th><td><b>51.2/136.9 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+48.4% ADE</td><th></th><td>+41.8% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 13 — Straight — MMSI 574003030</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case13_Straight_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1493.7 m</td><th>Average speed</th><td>9.68 kn</td></tr>
+        <tr><th>True turn</th><td>+2.41°</td><th>Anchor</th><td>10.41201, 106.80033</td></tr>
+        <tr><th>RF ADE/FDE</th><td>17.7/38.2 m</td><th>RNN ADE/FDE</th><td>14.9/29.8 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>22.9/59.2 m</td><th>HINN ADE/FDE</th><td><b>15.0/31.5 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>-0.6% ADE</td><th></th><td>-5.7% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #2</td><th></th><td>FDE #2</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 14 — Moderate curve — MMSI 636018224</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case14_Moderate_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1436.9 m</td><th>Average speed</th><td>9.31 kn</td></tr>
+        <tr><th>True turn</th><td>+9.91°</td><th>Anchor</th><td>10.26360, 107.09832</td></tr>
+        <tr><th>RF ADE/FDE</th><td>109.9/289.5 m</td><th>RNN ADE/FDE</th><td>89.0/275.8 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>71.2/203.4 m</td><th>HINN ADE/FDE</th><td><b>72.3/209.9 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>-1.5% ADE</td><th></th><td>-3.2% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #2</td><th></th><td>FDE #2</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 15 — Moderate curve — MMSI 352001126</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case15_Moderate_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1558.3 m</td><th>Average speed</th><td>10.10 kn</td></tr>
+        <tr><th>True turn</th><td>-8.89°</td><th>Anchor</th><td>10.41169, 107.01707</td></tr>
+        <tr><th>RF ADE/FDE</th><td>28.8/45.2 m</td><th>RNN ADE/FDE</th><td>32.5/123.6 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>18.1/49.4 m</td><th>HINN ADE/FDE</th><td><b>18.4/34.3 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>-1.4% ADE</td><th></th><td>+24.2% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #2</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 16 — Strong curve — MMSI 229786000</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case16_Strong_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>2000.2 m</td><th>Average speed</th><td>12.96 kn</td></tr>
+        <tr><th>True turn</th><td>+44.81°</td><th>Anchor</th><td>10.50497, 106.94972</td></tr>
+        <tr><th>RF ADE/FDE</th><td>132.0/344.9 m</td><th>RNN ADE/FDE</th><td>122.9/342.7 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>135.3/340.8 m</td><th>HINN ADE/FDE</th><td><b>122.0/360.4 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+0.8% ADE</td><th></th><td>-5.8% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #4</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 17 — Strong curve — MMSI 574572000</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case17_Strong_curve_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1007.1 m</td><th>Average speed</th><td>6.53 kn</td></tr>
+        <tr><th>True turn</th><td>-41.36°</td><th>Anchor</th><td>10.49541, 106.99805</td></tr>
+        <tr><th>RF ADE/FDE</th><td>82.5/269.0 m</td><th>RNN ADE/FDE</th><td>34.5/115.9 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>41.1/124.7 m</td><th>HINN ADE/FDE</th><td><b>36.2/98.3 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>-4.9% ADE</td><th></th><td>+15.2% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #2</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 18 — Long-range — MMSI 229786000</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case18_Long-range_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1915.0 m</td><th>Average speed</th><td>12.41 kn</td></tr>
+        <tr><th>True turn</th><td>+27.83°</td><th>Anchor</th><td>10.50077, 106.95003</td></tr>
+        <tr><th>RF ADE/FDE</th><td>143.4/354.9 m</td><th>RNN ADE/FDE</th><td>80.9/182.6 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>140.4/276.2 m</td><th>HINN ADE/FDE</th><td><b>79.4/193.4 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+1.7% ADE</td><th></th><td>-5.9% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #2</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 19 — Offshore — MMSI 574480000</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case19_Offshore_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>1323.1 m</td><th>Average speed</th><td>8.57 kn</td></tr>
+        <tr><th>True turn</th><td>-4.09°</td><th>Anchor</th><td>10.27655, 107.15479</td></tr>
+        <tr><th>RF ADE/FDE</th><td>48.3/92.2 m</td><th>RNN ADE/FDE</th><td>18.3/35.7 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>13.0/29.4 m</td><th>HINN ADE/FDE</th><td><b>13.9/28.9 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>-7.0% ADE</td><th></th><td>+1.9% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #2</td><th></th><td>FDE #1</td></tr>
+      </table>
+    </section>
+    <section class="case">
+      <h2>Case 20 — Channel/approach — MMSI 229786000</h2>
+      <div class="badge">Near-tie/challenging</div>
+      <img src="figures/Case20_Channel_approach_PAIR.png" loading="lazy">
+      <table>
+        <tr><th>5-min path</th><td>2069.2 m</td><th>Average speed</th><td>13.41 kn</td></tr>
+        <tr><th>True turn</th><td>+8.76°</td><th>Anchor</th><td>10.51688, 106.90319</td></tr>
+        <tr><th>RF ADE/FDE</th><td>115.0/287.6 m</td><th>RNN ADE/FDE</th><td>93.8/244.7 m</td></tr>
+        <tr><th>LSTM ADE/FDE</th><td>106.0/311.0 m</td><th>HINN ADE/FDE</th><td><b>89.8/253.1 m</b></td></tr>
+        <tr><th>HINN gain vs best baseline</th><td>+4.3% ADE</td><th></th><td>-3.4% FDE</td></tr>
+        <tr><th>HINN rank</th><td>ADE #1</td><th></th><td>FDE #2</td></tr>
+      </table>
+    </section></main></body></html>
